@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NODEJS-blog by-AnaghaVKumar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  .p-2{
+    text-decoration: none;
+  }
+  .featurette-divider {
+  margin: 2rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  </style>
+  
+</head>
+<body>
+  <header>
+    <nav class="nav d-flex justify-content-between ">
+      <a class="p-2 link-secondary text-dark" href="index.html">HOME</a>
+      <a class="p-2 link-secondary text-dark" href="html_page.html">HTML</a>
+      <a class="p-2 link-secondary text-dark" href="css_page.html">CSS</a>
+      <a class="p-2 link-secondary text-dark" href="js.html">JAVASCRIPT</a>
+      <a class="p-2 link-secondary text-dark" href="react.html">REACT</a>
+      <a class="p-2 link-secondary text-dark" href="nodejs.html">NODE JS</a>
+      <a class="p-2 link-secondary text-dark" href="bootstrap.html">BOOTSTRAP</a>
+      <a class="p-2 link-secondary text-dark" href="angular.html">ANGULAR</a>      
+      <a class="p-2 link-secondary text-dark" href="jquery.html">JQUERY</a>
+</nav>
+  <div class="img container-fluid">
+    <img style="width:100% ;height:400px;" src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190531152042/node1.png" alt="">
+  </div>
+</header>
+ 
+<div class="container mt-5">
+  <div class="row" style="border-bottom: 1px solid black;">
+    <div style="border-right: 1px solid black;" class="col-sm-4 p-3">
+      <h2>NodeJS</h2>
+      <div>
+        <img style="width:400px ; height: 200px;" src="data:image/png;base64,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" alt="">
+      </div>
+      <p>Node JS is an open-source and cross-platform runtime environment built on Chrome’s V8 JavaScript engine for executing JavaScript
+         code outside of a browser. It provides an event-driven, non-blocking (asynchronous) I/O and cross-platform runtime environment for
+         building highly scalable server-side applications using JavaScript.</p>
+      <h3 class="mt-4">Reference </h3>
+      <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+          <a class="nav-link " href="https://www.w3schools.com/nodejs/">https://www.w3schools.com/nodejs/</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://nodejs.org/en/learn/getting-started/introduction-to-nodejs">https://nodejs.org/en/learn/getting-started/introduction-to-nodejs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.tutorialspoint.com/nodejs/index.htm">https://www.tutorialspoint.com/nodejs/index.htm</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.javatpoint.com/nodejs-tutorial">https://www.javatpoint.com/nodejs-tutorial</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.tutorialsteacher.com/nodejs">https://www.tutorialsteacher.com/nodejs</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8 p-3">
+      <h2>Why NodeJS</h2>
+      <p>Learning JavaScript is necessary these days in the development field. Anyhow you have to use JavaScript on the front end.
+        So it is better to learn NodeJS rather than learn other backend technologies like PHP, JAVA, Ruby, etc. NodeJS is the hottest
+         technology across the world, especially in Silicon Valley. It is the perfect skill to open up amazing career opportunities for
+         any software developer.</p>
+          <img style="width:100% ;height:400px;" src="https://www.scaler.com/topics/images/what-is-node-js-2.webp" alt="">
+        <h2>How does Node.js work?</h2>
+        <p>Node.js accepts the request from the clients and sends the response, while working with the request node.
+            js handles them with a single thread. To operate I/O operations or requests node.js use the concept of threads. 
+            Thread is a sequence of instructions that the server needs to perform. It runs parallel on the server to provide 
+            the information to multiple clients. Node.js is an event loop single-threaded language. It can handle concurrent requests 
+            with a single thread without blocking it for one request.</p>
+    </div>
+  </div>
+  <!-- second row -->
+  <div class="row container-fluid mt-5">
+    <div class="col-sm-7">
+      <h3>Features of Node JS</h3>
+      <ol>
+        <li> Easy Scalability: Node JS is built upon Chrome V8’s engine powered by Google. It allows Node to provide a server-side runtime environment that compiles and executes JavaScript at lightning speeds.</li>
+        <li>  Real time web apps: Today the web has become much more about interaction. Users want to interact with each other in real-time. Chat, gaming, constant social media updates, collaboration tools, eCommerce websites, real-time tracking apps, marketplace- each of these features requires real-time communication between users, clients, and servers across the web.</li>
+        <li>  Fast Suite: As we have discussed that NodeJS is highly scalable and lightweight that’s why it’s a heavy favorite for microservice architectures. In a nutshell, microservice architectures mean breaking down the application into isolated and independent services.</li>
+        <li>  Easy to learn and code: No matter what language you are using for the backend application you’re gonna need JavaScript for front-end anyway so instead of spending your time learning a server-side language such as Php, Java or Ruby on Rails, you can spend all your efforts in learning JS and mastering in it.</li>
+        <li>  Data Streaming: NodeJS comes to the rescue since it’s good at handling such an I/O process which allows users to transcode media files simultaneously while they are being uploaded. It takes less time compared to other data processing methods for processing data.</li>
+        <li>  Corporate Support: It’s an independent community aimed at facilitating the development of NodeJS core tools. The foundation of NodeJS was formed to speed up the development of NodeJS, and it was intended to allow broad adoption of it.</li>
+      </ol>
+    </div>
+    <div class="col">
+         <h3>Advantages of NodeJS</h3> 
+         <ol>
+            <li>Easy Scalability: Easily scalable the application in both horizontal and vertical directions.</li>
+            <li>  Real-time web apps: Node.js is much more preferable because of faster synchronization. Also, the event loop avoids HTTP overloaded for Node.js development.</li>
+            <li> Fast Suite: NodeJS acts like a fast suite and all the operations can be done quickly like reading or writing in the database, network connection, or file system</li>
+            <li>   Easy to learn and code: NodeJS is easy to learn and code because it uses JavaScript.</li>
+            <li>  Advantage of Caching: It provides the caching of a single module. Whenever there is any request for the first module, it gets cached in the application memory, so you don’t need to re-execute the code.</li>
+            <li>   Data Streaming: In NodeJS HTTP request and response are considered as two separate events.</li>
+            <li>   Hosting: PaaS (Platform as a Service) and Heroku are the hosting platforms for NodeJS application deployment which is easy to use without facing any issue.</li>
+            <li>   Corporate Support: Most of the well-known companies like Walmart, Paypal, Microsoft, Yahoo are using NodeJS for building the applications.</li>
+         </ol>   
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+            <img style="width:100% ;height:400px;" src="https://marketing.celestialsys.com/wp-content/uploads/2019/07/blog9.jpg" alt="">
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+    </symbol>
+    <symbol id="instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+    </symbol>
+    <symbol id="twitter" viewBox="0 0 16 16">
+      <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+    </symbol>
+  </svg>
+  <div class="row p-3 bg-primary text-dark ">
+    <div class="col ">
+      <span class="mb-2 mb-md-5 justify-content-start">2023 <br>Anagha V Kumar</span>
+    </div>
+    <div class="col">
+      <ul class="justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-dark" href="https://twitter.com/i/flow/login"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="text-dark" href="https://www.instagram.com/"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="text-dark" href="https://www.facebook.com/"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+  <!-- <hr class="featurette-divider"> -->
